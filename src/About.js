@@ -73,7 +73,7 @@ class About extends React.Component {
                         <Col style={{ paddingBottom: '10px' }}>
                             <Card style={{ borderWidth: '5px'}}>
                                 <Card.Body>
-                                    <Card.Title><b>University of <span style={{ color: 'blue' }}>Illinois</span> @ <span style={{ color: 'orange' }}>Urbana-Champaign</span></b></Card.Title>
+                                    <Card.Title><b>University of <span style={{ color: 'darkblue' }}>Illinois</span> @ <span style={{ color: '#E84A27' }}>Urbana-Champaign</span></b></Card.Title>
                                     <Card.Text style={{ fontSize: '120%' }}>
                                         <div><b>Dual Degree:</b></div>
                                         <div>- Computer Science</div>
@@ -114,7 +114,7 @@ class About extends React.Component {
                                                 Hey ya'll. 
                                                 My name is Sohail Khan. 
                                                 I currently attend the University of Illinois @ Urbana-Champaign where 
-                                                I study Computer Science and Cognitive Psychology. 
+                                                I study CS and Psych, with a minor in Statistics. 
                                                 </p>
                                                 
                                                 

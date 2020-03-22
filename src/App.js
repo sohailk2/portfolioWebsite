@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
-  // Link,
+  Link,
   // Redirect,
   // useLocation
 } from "react-router-dom";
@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
 
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
 
         {/* change this back to routing so the pages don't reload? */}
 
@@ -70,9 +70,15 @@ class App extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/">About</Nav.Link>
-              <Nav.Link href="experience">Experience</Nav.Link>
-              <Nav.Link href="projects">Projects</Nav.Link>
+              <Nav.Link>
+                <Link style={{ color: 'grey'}} to="/">About</Link>
+              </Nav.Link>
+              <Nav.Link >
+              <Link style={{ color: 'grey'}} to="/experience">Experience</Link>
+                </Nav.Link>
+              <Nav.Link>
+              <Link style={{color: 'grey'}} to="/projects">Projects</Link>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
