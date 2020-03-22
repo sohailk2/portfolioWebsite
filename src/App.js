@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
 
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
 
         {/* change this back to routing so the pages don't reload? */}
 
