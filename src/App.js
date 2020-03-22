@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import logo from './logo.svg';
 import './App.css';
 import About from './About'
+import Experience from './Experience'
 
 function NoMatch() {
   return ("I can't seem to find this page!")
@@ -83,10 +84,10 @@ class App extends React.Component {
             </Route>
             <Route path="/experience">
 
-
+                <Experience/>
             </Route>
             <Route path="/projects">
-
+                <Experience/>
             </Route>
 
             <Route path="*">
@@ -106,54 +107,4 @@ class App extends React.Component {
 }
 
 export default App
-// export default function App() {
-
-//   const [key, setKey] = useState('home');
-
-
-//   return (
-//     <Router>
-
-//       <h2>Key:<br></br>{key}</h2>
-//       <Tabs activeKey={key} onSelect={k => {setKey(k);}}>
-//         <Tab eventKey="home" title="Home">
-//           <Link to="/about">profile</Link>
-//         </Tab>
-//         <Tab eventKey="profile" title="Profile">
-
-//         </Tab>
-
-//       </Tabs>
-
-
-//         <Switch>
-//           <Route path="/about">
-//             <About />
-//           </Route>
-//           <Route path="/">
-//             <Home />
-//           </Route>
-//         </Switch>
-//     </Router>
-//   );
-// }
-
-// function Home() {
-//   const [currentTime, setCurrentTime] = useState(0);
-
-//   useEffect(() => {
-//     fetch('/time').then(res => res.json()).then(data => {
-//       setCurrentTime(data.time);
-//     });
-//   }, []);
-
-//   return (
-//     <h2>The current time is {currentTime}.</h2> 
-//   );
-// }
-
-// function About() {
-//   return <h2>About</h2>;
-// }
-
 
