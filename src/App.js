@@ -15,15 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import logo from './logo.svg';
 import './App.css';
-
-
-function page2() {
-  return ("page 2")
-}
-
-function Welcome() {
-  return (<div style={{padding: '15px', height: '1000px', backgroundColor: '#6DD3CE'}}>Welcome Page</div>)
-}
+import About from './About'
 
 function NoMatch() {
   return ("I can't seem to find this page!")
@@ -32,14 +24,14 @@ function NoMatch() {
 class App extends React.Component {
 
 
-  
+
 
   constructor() {
     super()
     this.state = {
       // test: "Yes",
       // currentTab: "Home",
-      internalPage: {height: '85vh'}
+      internalPage: { height: '85vh' }
     }
   }
 
@@ -68,7 +60,7 @@ class App extends React.Component {
 
           </Tab>
         </Tabs> */}
-        <Navbar style={{backgroundColor: 'white', fontSize : '120%'}}>
+        <Navbar style={{ backgroundColor: 'white', fontSize: '120%' }}>
           {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -80,27 +72,28 @@ class App extends React.Component {
           </Navbar.Collapse>
         </Navbar>
 
-        <Card className="internalPadding" style={{margin: '15px', height: this.state.internalPage.height, borderRadius: '0', borderWidth: '15px', borderColor: 'white', overflow: 'scroll'}}>
+        <Card className="internalPadding" style={{margin: '15px', height: this.state.internalPage.height, borderRadius: '0', borderWidth: '15px', borderColor: 'white', overflow: 'scroll' }}>
 
-        <Switch>
-          <Route exact path="/">
-            <Welcome/>
-
-            {/* so i want my name to drop in other things to pop in from left and right? */}
-          </Route>
-          <Route path="/experience">
-           
-            
-          </Route>
-          <Route path="/projects">
+          <Switch>
+            <Route exact path="/">
              
-          </Route>
+                <About internalPage = {this.state.internalPage}/>
 
-          <Route path="*">
-            <NoMatch />
-          </Route>
+              {/* so i want my name to drop in other things to pop in from left and right? */}
+            </Route>
+            <Route path="/experience">
 
-        </Switch>
+
+            </Route>
+            <Route path="/projects">
+
+            </Route>
+
+            <Route path="*">
+              <NoMatch />
+            </Route>
+
+          </Switch>
         </Card>
 
 
