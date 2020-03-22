@@ -17,6 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import About from './About'
 import Experience from './Experience'
+import Projects from './Projects'
 
 function NoMatch() {
   return ("I can't seem to find this page!")
@@ -40,6 +41,9 @@ class App extends React.Component {
     return (
 
       <Router>
+
+        {/* change this back to routing so the pages don't reload? */}
+
 
         {/* <Route path="/" component={Game}>
           <Route path="page1" component={Game} />
@@ -84,10 +88,10 @@ class App extends React.Component {
             </Route>
             <Route path="/experience">
 
-                <Experience/>
+                <Experience internalPage = {this.state.internalPage}/>
             </Route>
             <Route path="/projects">
-                <Experience/>
+                <Projects internalPage = {this.state.internalPage}/>
             </Route>
 
             <Route path="*">

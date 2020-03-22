@@ -1,12 +1,12 @@
 import React from 'react'
 
-class Experience extends React.Component {
+class Projects extends React.Component {
 
     // maybe restructure this as a card area and just pass in some data from somewhere else?
 
     render() {
         return (
-            <div style={{height: this.props.internalPage.height, backgroundColor: '#C8E9A0'}}>
+            <div style={{height: this.props.internalPage.height, backgroundColor: '#F7A278'}}>
                 "under construction..."
             </div>
 
@@ -17,4 +17,4 @@ class Experience extends React.Component {
     }
 }
 
-export default Experience
+export default Projects

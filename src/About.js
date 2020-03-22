@@ -30,10 +30,10 @@ class About extends React.Component {
 
             <div style={{ backgroundColor: '#6DD3CE', flexBasis: this.props.internalPage.height }}>
 
-                <div style={{ textAlign: 'center', color: 'white', marginTop: '10px', marginBottom: '5px', paddingLeft: '5px', paddingRight: '5px', width: '100%' }}>
+                <div style={{ textAlign: 'center', color: 'white', marginTop: '0px', marginBottom: '5px', paddingLeft: '5px', paddingRight: '5px', width: '100%' }}>
                     <Textfit mode="single" max="80">
-                        <Quote content="sohail khan" />
-                        {/* sohail khan */}
+                        {/* <Quote content="sohail khan" /> */}
+                        sohail khan
                         <span style={{ color: 'black' }}> - </span>
                         <small class="text-muted">sophomore</small>
                         {/* ///over here who am i changes to my name: and the small is the adjectives that describe me? */}
@@ -69,8 +69,8 @@ class About extends React.Component {
                 </Card> */}
 
                 <Container>
-                    <Row style={{ paddingBottom: '10px' }}>
-                        <Col>
+                    <Row style={{ paddingBottom: '0px' }}>
+                        <Col style={{ paddingBottom: '10px' }}>
                             <Card style={{ borderWidth: '5px'}}>
                                 <Card.Body>
                                     <Card.Title><b>University of <span style={{ color: 'blue' }}>Illinois</span> @ <span style={{ color: 'orange' }}>Urbana-Champaign</span></b></Card.Title>
@@ -84,7 +84,7 @@ class About extends React.Component {
                             </Card>
 
                         </Col>
-                        <Col>
+                        <Col style={{ paddingBottom: '10px' }}>
                         <Card style={{ borderWidth: '5px'}}>
                                 <Card.Body>
                                     <Card.Title><b>Contact Me:</b></Card.Title>
@@ -103,7 +103,7 @@ class About extends React.Component {
                     </Row>
 
                     <Row style={{ paddingBottom: '10px' }}>
-                    <Col>
+                    <Col style={{ paddingBottom: '10px' }}>
                         <Card style={{ borderWidth: '5px', }}>
                                 <Card.Body>
                                     <Card.Title><b>A little more about me...</b></Card.Title>
@@ -119,7 +119,7 @@ class About extends React.Component {
                                                 
                                                 
                                                 <p>
-                                                I have experience developing web applications, building iot systems, working with voice assistants{/* web applications, building iot systems, bots */}, and love working on whatever strikes my interest at any given moment. 
+                                                I have experience developing web applications, building iot systems, working with voice assistants{/* web applications, building iot systems, bots */}, and love working on whatever strikes my interest. 
                                                 At the moment, I am working on a chatbot that imitates ony of my friends, as well as working on an eye tracking project to control your computer.
                                                 </p>
                                                 
@@ -129,7 +129,7 @@ class About extends React.Component {
                                                 </p>
                                                  
                                                 <p>
-                                                    While your here, check out my projects section to learn about all the different projects I've worked on!
+                                                    While your here, check out my projects and experience sections to get a better idea of the what I've worked on!
                                                 </p>
                                             </p>
                                         </div>
