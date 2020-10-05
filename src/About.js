@@ -35,7 +35,7 @@ class About extends React.Component {
                         {/* <Quote content="sohail khan" /> */}
                         sohail khan
                         <span style={{ color: 'black' }}> - </span>
-                        <small class="text-muted">sophomore</small>
+                        <small class="text-muted">junior</small>
                         {/* ///over here who am i changes to my name: and the small is the adjectives that describe me? */}
 
                     </Textfit>
@@ -89,9 +89,10 @@ class About extends React.Component {
                                 <Card.Body>
                                     <Card.Title><b>Contact Me:</b></Card.Title>
                                     <Card.Text style={{ fontSize: '120%' }}>
-                                        <div>LinkedIn</div>
-                                        <div>Github</div>
-                                        <div>Facebook</div>
+                                        {/* <div><a href="linkedin.com"></a>LinkedIn</div> */}
+                                        <div><a target="_blank" href="https://www.linkedin.com/in/sohailmkhan30/">LinkedIn</a></div>
+                                        <div><a target="_blank" href="https://github.com/sohailk2">Github</a></div>
+                                        <div style={{visibility: 'hidden'}}>Facebook</div>
                                 </Card.Text>
                                 </Card.Body>
 
@@ -120,7 +121,7 @@ class About extends React.Component {
                                                 
                                                 <p>
                                                 I have experience developing web applications, building iot systems, working with voice assistants{/* web applications, building iot systems, bots */}, and love working on whatever strikes my interest. 
-                                                At the moment, I am working on a chatbot that imitates ony of my friends, as well as working on an eye tracking project to control your computer.
+                                                At the moment, I am working on a chatbot that imitates ony of my friends.
                                                 </p>
                                                 
                                                 <p>
